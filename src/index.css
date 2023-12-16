@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.detail-page{
+    height: 91vh;
+}
+
+.detail-conatiner{
+    height: 90%;
+}
