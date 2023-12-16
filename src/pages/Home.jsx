@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import ItemShow from "../components/itemShow";
+import ItemShow from "../components/ItemShow";
 import { useSearchParams } from "react-router-dom";
 
 function Home() {
