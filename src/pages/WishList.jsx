@@ -1,4 +1,4 @@
-import ItemShow from "../components/itemShow";
+import ItemShow from "../components/ItemShow";
 import { useSelector } from "react-redux";
 
 function WishList() {
