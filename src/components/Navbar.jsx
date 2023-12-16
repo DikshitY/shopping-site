@@ -17,11 +17,11 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white z-10 fixed top-0 left-0 right-0 w-screen h-16 flex justify-between items-center p-4">
-      <div className="flex items-center md:w-3/4 sm:gap-16 gap-8">
+    <nav className="bg-white z-10 fixed top-0 left-0 right-0 w-screen h-16 flex justify-between items-center sm:p-4 p-2">
+      <div className="flex flex-col sm:flex-row items-center md:w-3/4 sm:gap-16">
         <NavLink
           to="."
-          className="font-bold sm:text-2xl text-xl"
+          className="font-bold sm:text-2xl text-xl self-start"
           style={({ isActive }) => (isActive ? style : null)}
         >
           #SHOPEE

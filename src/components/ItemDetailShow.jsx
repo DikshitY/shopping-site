@@ -33,7 +33,6 @@ function ItemDetailShow({ product }) {
   };
 
   const handleCartClick = () => {
-    console.log("clicked");
     if (isCart) {
       dispatch(removeFromCart(product));
     } else {
@@ -42,7 +41,7 @@ function ItemDetailShow({ product }) {
   };
 
   return (
-    <div className="detail-conatiner flex flex-col sm:flex-row bg-white sm:h-auto rounded-xl">
+    <div className="flex flex-col sm:flex-row bg-white sm:h-auto rounded-xl mb-4">
       <div className="h-1/2 sm:h-full">
         <img
           className="h-full w-full object-cover rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none"
@@ -68,7 +67,7 @@ function ItemDetailShow({ product }) {
         <button
           className={`${
             isCart ? "bg-slate-400" : "bg-green-600"
-          } text-white px-12 py-4 rounded-2xl w-72 text-lg self-center`}
+          } text-white px-12 py-4 rounded-2xl w-72 text-lg self-center mt-auto`}
           onClick={handleCartClick}
         >
           {isCart ? (

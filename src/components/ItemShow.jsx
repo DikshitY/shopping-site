@@ -24,8 +24,8 @@ function ItemShow({ item, searchParams, type }) {
   return (
     <div className="bg-white rounded-xl flex relative sm:max-w-2xl">
       <Link className="w-1/2 mr-4 sm:mr-8" to={`${item.id}`} state={{search: searchParams, type}}>
-        <div >
-          <img className="w-full rounded-l-xl" src={item.image} />
+        <div className="w-full h-full">
+          <img className="h-full w-full object-cover rounded-l-xl" src={item.image} />
         </div>
       </Link>
       <div className="w-1/2 mt-4">
@@ -36,9 +36,9 @@ function ItemShow({ item, searchParams, type }) {
           <p className="text-slate-500">{item.idealFor}</p>
         </div>
         <p className="mb-2">$ {item.price}</p>
-        <p className="font-semibold">{item.bankOffer ? "Bank Offer" : null}</p>
+        <p className="font-semibold mb-2">{item.bankOffer ? "Bank Offer" : null}</p>
       </div>
-      <button className="absolute top-2 right-2 text-xl" onClick={handlWishClick}>
+      <button className="absolute bottom-2 right-2 text-xl" onClick={handlWishClick}>
         {isWishList ? <GoHeartFill className="text-red-600"/> : <GoHeart />}
       </button>
     </div>
