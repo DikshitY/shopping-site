@@ -16,7 +16,7 @@ function ItemDetail() {
   });
 
   return (
-    <div className="h-screen w-screen mt-16 p-4 sm:p-8 flex flex-col justify-between sm:justify-center  items-center">
+    <div className="h-screen w-screen mt-16 p-4 sm:p-8 flex flex-col justify-center  items-center">
       <Link className="text-xl self-start sm:mb-8" to={`..?${location.state.search}`} relative="path">
         &larr; <span>{`Back to the ${type} store`}</span>
       </Link>
