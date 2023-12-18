@@ -41,14 +41,14 @@ function ItemDetailShow({ product }) {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row bg-white sm:h-auto rounded-xl mb-4">
-      <div className="h-1/2 sm:h-full">
+    <div className="flex flex-col sm:flex-row bg-white sm:h-auto rounded-xl items-center border-2 border-green-500">
+      <div className="sm:grow sm:h-full sm:w-1/2 border-4 border-red-600">
         <img
           className="h-full w-full object-cover rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none"
           src={product.image}
         />
       </div>
-      <div className="relative p-4 flex flex-col">
+      <div className="relative p-4 flex flex-col sm:w-1/2">
         <h3 className="text-2xl font-semibold">{product.name}</h3>
         <p className="text-slate-500 mb-2">{product.product}</p>
         <div className="flex items-center gap-2 mb-2 sm:mb-16">
