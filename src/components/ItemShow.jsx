@@ -23,7 +23,7 @@ function ItemShow({ item, searchParams, type }) {
 
   return (
     <div className="bg-white rounded-xl flex relative sm:max-w-2xl">
-      <Link className="w-1/2 mr-4 sm:mr-8" to={`${item.id}`} state={{search: searchParams, type}}>
+      <Link className="w-1/2 mr-4 sm:mr-8" to={`/${item.id}`} state={{search: searchParams, type}}>
         <div className="w-full h-full">
           <img className="h-full w-full object-cover rounded-l-xl" src={item.image} />
         </div>

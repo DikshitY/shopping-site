@@ -41,8 +41,8 @@ function ItemDetailShow({ product }) {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row bg-white sm:h-auto rounded-xl items-center border-2 border-green-500">
-      <div className="sm:grow sm:h-full sm:w-1/2 border-4 border-red-600">
+    <div className="flex flex-col sm:flex-row bg-white sm:h-auto rounded-xl items-center">
+      <div className="sm:grow sm:h-full sm:w-1/2">
         <img
           className="h-full w-full object-cover rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none"
           src={product.image}
